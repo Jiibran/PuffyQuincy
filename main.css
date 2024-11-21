@@ -1,0 +1,488 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Umum */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    background: linear-gradient(180deg, #f89ad1 0%, #f8d1f8 100%);
+    color: #ff0095;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    height: 10rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.icon-cart img {
+    width: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon-cart img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+main {
+    display: block;
+    margin: 5rem 0;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+.hero h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 20rem;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title img {
+    border-radius: 50%;
+    width: 5rem;
+}
+
+.tranding-slide, .tranding-slide-img img {
+    text-align: center;
+    width: 37rem;
+    height: 42rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    display: none;
+}
+
+/* Seksi Hero */
+.hero {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 10rem;
+}
+
+/* Slideshow */
+.slideshow {
+    width: 100%; /* Pastikan lebar penuh untuk mencegah scroll horizontal */
+    margin: auto;
+    padding: 5rem 0;
+    overflow: hidden; /* Menghilangkan scroll horizontal */
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: auto; /* Berikan batas lebar maksimum untuk container */
+    height: 50rem;
+    overflow: hidden; /* Menghindari elemen keluar dari container */
+    margin: auto;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Mencegah elemen melebar */
+}
+
+.swiper-slide img {
+    width: auto; /* Proporsi otomatis agar tidak melampaui area */
+    max-width: 90%; /* Sesuaikan dengan ukuran slide */
+    height: 90%; /* Cegah gambar melewati tinggi slide */
+    object-fit: cover;
+    border-radius: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide img:hover {
+    transform: scale(1.1);
+}
+
+/* Tombol Navigasi */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ff0095;
+    z-index: 10; /* Pastikan tombol navigasi terlihat */
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff0095;
+}
+
+/* Tambahan untuk Swiper Slide Shadow */
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    display: none;
+}
+
+
+/* Ikon Media Sosial */
+.networks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+}
+
+.networks i {
+    color: #ff0095;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+i:hover {
+    cursor: pointer;
+    transition: 5s;
+    color: #fff;
+}
+
+.networks i:hover {
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* Cart Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cart-item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff0095;
+    color: #fff;
+    border-radius: 5px;
+}
+
+quantity-controls input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Dropdown Container */
+.menu-icons {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+
+/* Dropdown Button Icons */
+.dropdown .icon {
+    width: 4rem;
+    height: 4rem; /* Tambahkan tinggi untuk ikon <i> */
+    cursor: pointer;
+    color: #ff0095;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem; /* Sesuaikan ukuran font untuk ikon <i> */
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px; /* Sesuaikan berdasarkan tinggi header */
+    background-color: #fff;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1001;
+}
+
+/* Show the dropdown content when active */
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+/* Cart Dropdown Specific Styles */
+#cartDropdown h2,
+#locationDropdown h2 {
+    margin-bottom: 1rem;
+    color: #ff0095;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.cart-item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff0095;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.quantity-controls input {
+    width: 40px;
+    text-align: center;
+    margin: 0 5px;
+    font-size: 14px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Location Dropdown Specific Styles */
+#locationDropdown p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .dropdown-content {
+        top: 50px;
+        right: 10px;
+        width: 200px;
+    }
+
+    .menu-icons {
+        gap: 1rem;
+    }
+
+    .dropdown .icon {
+        width: 3rem;
+        height: 3rem;
+        font-size: 3rem;
+    }
+
+    .cart-item-img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* All Products Section */
+#all-products {
+    padding: 5rem 10%;
+    background-color: #fff;
+    color: #333;
+}
+
+#all-products h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    color: #ff0095;
+}
+
+.all-products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 2rem;
+    color: #ff0095;
+}
+
+.product-card p {
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #555;
+}
+
+/* Hover Effects */
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments for All Products */
+@media (max-width: 768px) {
+    #all-products {
+        padding: 3rem 5%;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+
+    .product-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .product-card p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #all-products h2 {
+        font-size: 2.5rem;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    .product-card h3 {
+        font-size: 1.6rem;
+    }
+
+    .product-card p {
+        font-size: 1rem;
+    }
+}

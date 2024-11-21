@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Puffy Quincy</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Puffy Quincy
+        </div>
+        <div class="menu-icons">
+            <!-- Cart Dropdown -->
+            <div class="dropdown">
+                <img src="img/cart.png" alt="Cart" class="icon" id="cartIcon">
+                <div class="dropdown-content" id="cartDropdown">
+                    <h2>Your Cart</h2>
+                    <div class="cart-item">
+                        <img src="img/1.jpeg" alt="Cupcake" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <p>Cupcake</p>
+                            <div class="quantity-controls">
+                                <button id="decreaseBtn">-</button>
+                                <input type="number" id="quantityInput" value="1" min="1">
+                                <button id="increaseBtn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="img/2.jpeg" alt="Cupcake" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <p>Cupcake</p>
+                            <div class="quantity-controls">
+                                <button id="decreaseBtn">-</button>
+                                <input type="number" id="quantityInput" value="1" min="1">
+                                <button id="increaseBtn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="img/3.jpeg" alt="Cupcake" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <p>Cupcake</p>
+                            <div class="quantity-controls">
+                                <button id="decreaseBtn">-</button>
+                                <input type="number" id="quantityInput" value="1" min="1">
+                                <button id="increaseBtn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="img/4.jpeg" alt="Cupcake" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <p>Cupcake</p>
+                            <div class="quantity-controls">
+                                <button id="decreaseBtn">-</button>
+                                <input type="number" id="quantityInput" value="1" min="1">
+                                <button id="increaseBtn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="img/5.jpeg" alt="Cupcake" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <p>Cupcake</p>
+                            <div class="quantity-controls">
+                                <button id="decreaseBtn">-</button>
+                                <input type="number" id="quantityInput" value="1" min="1">
+                                <button id="increaseBtn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="img/6.jpeg" alt="Cupcake" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <p>Cupcake</p>
+                            <div class="quantity-controls">
+                                <button id="decreaseBtn">-</button>
+                                <input type="number" id="quantityInput" value="1" min="1">
+                                <button id="increaseBtn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="img/7.jpeg" alt="Cupcake" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <p>Cupcake</p>
+                            <div class="quantity-controls">
+                                <button id="decreaseBtn">-</button>
+                                <input type="number" id="quantityInput" value="1" min="1">
+                                <button id="increaseBtn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="img/8.jpeg" alt="Cupcake" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <p>Cupcake</p>
+                            <div class="quantity-controls">
+                                <button id="decreaseBtn">-</button>
+                                <input type="number" id="quantityInput" value="1" min="1">
+                                <button id="increaseBtn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="img/9.jpeg" alt="Cupcake" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <p>Cupcake</p>
+                            <div class="quantity-controls">
+                                <button id="decreaseBtn">-</button>
+                                <input type="number" id="quantityInput" value="1" min="1">
+                                <button id="increaseBtn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="img/10.jpeg" alt="Cupcake" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <p>Cupcake</p>
+                            <div class="quantity-controls">
+                                <button id="decreaseBtn">-</button>
+                                <input type="number" id="quantityInput" value="1" min="1">
+                                <button id="increaseBtn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Location Dropdown -->
+            <div class="dropdown">
+                <i class='bx bx-map icon' id="locationIcon"></i>
+                <div class="dropdown-content" id="locationDropdown">
+                    <h2>Our Address</h2>
+                    <p>Puffy Quincy</p>
+                    <p>Jl. KH Ahmad Dahlan No. 2 RT11/10, Karawang, Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <main>
+            <section class="hero">
+                <div class="title">
+                    <h3>Enjoy tasty cupcake</h3>
+                    <img src="img/22.gif" alt="Cupcake Animation">
+                </div>
+            </section>
+            <section id="tranding">
+                <div class="container">
+                    <div class="swiper-container tranding-slider">
+                        <div class="swiper-wrapper">
+                            <!-- Swiper Slides -->
+                            <div class="swiper-slide trending-slide"> 
+                                <div class="trending-slide-img">
+                                    <img src="img/1.jpeg" alt="Trending 1">
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide trending-slide">
+                                <div class="trending-slide-img">
+                                    <img src="img/2.jpeg" alt="Trending 2">
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide trending-slide">
+                                <div class="trending-slide-img">
+                                    <img src="img/3.jpeg" alt="Trending 3">
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide trending-slide">
+                                <div class="trending-slide-img">
+                                    <img src="img/4.jpeg" alt="Trending 4">
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide trending-slide">
+                                <div class="trending-slide-img">
+                                    <img src="img/5.jpeg" alt="Trending 5">
+                                </div>
+                            </div>
+
+                            <!-- Additional Slides -->
+                            <div class="swiper-slide trending-slide">
+                                <div class="trending-slide-img">
+                                    <img src="img/6.jpeg" alt="Trending 6">
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide trending-slide">
+                                <div class="trending-slide-img">
+                                    <img src="img/7.jpeg" alt="Trending 7">
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide trending-slide">
+                                <div class="trending-slide-img">
+                                    <img src="img/8.jpeg" alt="Trending 8">
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide trending-slide">
+                                <div class="trending-slide-img">
+                                    <img src="img/9.jpeg" alt="Trending 9">
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide trending-slide">
+                                <div class="trending-slide-img">
+                                    <img src="img/10.jpeg" alt="Trending 10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- All Products Section -->
+            <section id="all-products">
+                <div class="all-products-container">
+                    <h2>All Products</h2>
+                    <div class="products-grid">
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <img src="img/1.jpeg" alt="Product 1">
+                            <h3>Product 1</h3>
+                            <p>Delicious cupcake flavor description.</p>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="product-card">
+                            <img src="img/2.jpeg" alt="Product 2">
+                            <h3>Product 2</h3>
+                            <p>Delicious cupcake flavor description.</p>
+                        </div>
+                        <!-- Continue for products 3 to 10 -->
+                        <div class="product-card">
+                            <img src="img/3.jpeg" alt="Product 3">
+                            <h3>Product 3</h3>
+                            <p>Delicious cupcake flavor description.</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/4.jpeg" alt="Product 4">
+                            <h3>Product 4</h3>
+                            <p>Delicious cupcake flavor description.</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/5.jpeg" alt="Product 5">
+                            <h3>Product 5</h3>
+                            <p>Delicious cupcake flavor description.</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/6.jpeg" alt="Product 6">
+                            <h3>Product 6</h3>
+                            <p>Delicious cupcake flavor description.</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/7.jpeg" alt="Product 7">
+                            <h3>Product 7</h3>
+                            <p>Delicious cupcake flavor description.</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/8.jpeg" alt="Product 8">
+                            <h3>Product 8</h3>
+                            <p>Delicious cupcake flavor description.</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/9.jpeg" alt="Product 9">
+                            <h3>Product 9</h3>
+                            <p>Delicious cupcake flavor description.</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/10.jpeg" alt="Product 10">
+                            <h3>Product 10</h3>
+                            <p>Delicious cupcake flavor description.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of All Products Section -->
+
+            <div class="networks">
+                <a href="https://www.instagram.com/puffyquincy/" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-instagram-alt bx-lg"></i>
+                </a>
+                <a href="https://www.tiktok.com/@kenchinnn2?_t=8raHOjz9rWC&_r=1" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-tiktok bx-lg"></i>
+                </a>
+                <a href="https://wa.me/6289620262040" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-whatsapp bx-lg"></i>
+                </a>
+                <!-- <i class="bx bxl-facebook bx-lg"></i>
+                <i class="bx bxl-youtube bx-lg"></i> -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>   
+</body>
+</html>
